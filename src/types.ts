@@ -1,6 +1,5 @@
 // Game Center Types
-
-export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'tetris' | 'breakout'
+export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'game2048' | 'minesweeper' | 'tetris' | 'breakout'
 
 export interface GameInfo {
   id: GameType

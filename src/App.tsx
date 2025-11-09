@@ -6,7 +6,11 @@ import { Memory } from '@/components/games/Memory'
 import { Tetris } from '@/components/games/Tetris'
 import { Breakout } from '@/components/games/Breakout'
 
-export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'tetris' | 'breakout'
+import { Game2048 } from '@/components/games/Game2048'
+import { Minesweeper } from '@/components/games/Minesweeper'
+
+export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'tetris' | 'breakout' 'game2048' | 'minesweeper'
+
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -34,10 +38,17 @@ function App() {
         return <Snake onBack={() => setCurrentGame('home')} />
       case 'memory':
         return <Memory onBack={() => setCurrentGame('home')} />
+<<<<<<< HEAD
       case 'tetris':
         return <Tetris onBack={() => setCurrentGame('home')} />
       case 'breakout':
         return <Breakout onBack={() => setCurrentGame('home')} />
+=======
+      case 'game2048':
+        return <Game2048 onBack={() => setCurrentGame('home')} />
+      case 'minesweeper':
+        return <Minesweeper onBack={() => setCurrentGame('home')} />
+>>>>>>> 99b7912 (Add Game2048 and Minesweeper to Game Center)
       default:
         return <GameCenter onSelectGame={setCurrentGame} theme={theme} toggleTheme={toggleTheme} />
     }
