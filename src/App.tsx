@@ -10,7 +10,7 @@ import { Minesweeper } from '@/components/games/Minesweeper'
 import { ConnectFour } from '@/components/games/ConnectFour'
 import { SlidingPuzzle } from '@/components/games/SlidingPuzzle'
 
-export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'tetris' | 'breakout' 'game2048' | 'minesweeper'| 'connectfour' | 'slidingpuzzle'
+export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'tetris' | 'breakout' | 'game2048' | 'minesweeper' | 'connectfour' | 'slidingpuzzle'
 
 function App() {
   const [theme, setTheme] = useState(() => {
