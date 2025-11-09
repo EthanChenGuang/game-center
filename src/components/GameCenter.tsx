@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Gamepad2, Grid3x3, Zap, Brain, Moon, Sun } from 'lucide-react'
+import { Gamepad2, Grid3x3, Zap, Brain, Moon, Sun, Box, CircleDot } from 'lucide-react'
 import { GameType } from '@/App'
 
 interface GameCenterProps {
@@ -39,6 +39,20 @@ export function GameCenter({ onSelectGame, theme, toggleTheme }: GameCenterProps
       description: 'Match pairs of cards to test your memory!',
       icon: <Brain className="w-12 h-12" />,
       color: 'from-purple-500 to-pink-500'
+    },
+    {
+      id: 'tetris',
+      title: 'Tetris',
+      description: 'Stack the falling blocks and clear lines!',
+      icon: <Box className="w-12 h-12" />,
+      color: 'from-indigo-500 to-violet-500'
+    },
+    {
+      id: 'breakout',
+      title: 'Breakout',
+      description: 'Break all the bricks with your paddle and ball!',
+      icon: <CircleDot className="w-12 h-12" />,
+      color: 'from-rose-500 to-pink-500'
     }
   ]
 

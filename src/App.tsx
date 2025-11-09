@@ -3,8 +3,10 @@ import { GameCenter } from '@/components/GameCenter'
 import { TicTacToe } from '@/components/games/TicTacToe'
 import { Snake } from '@/components/games/Snake'
 import { Memory } from '@/components/games/Memory'
+import { Tetris } from '@/components/games/Tetris'
+import { Breakout } from '@/components/games/Breakout'
 
-export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory'
+export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'tetris' | 'breakout'
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -32,6 +34,10 @@ function App() {
         return <Snake onBack={() => setCurrentGame('home')} />
       case 'memory':
         return <Memory onBack={() => setCurrentGame('home')} />
+      case 'tetris':
+        return <Tetris onBack={() => setCurrentGame('home')} />
+      case 'breakout':
+        return <Breakout onBack={() => setCurrentGame('home')} />
       default:
         return <GameCenter onSelectGame={setCurrentGame} theme={theme} toggleTheme={toggleTheme} />
     }

@@ -23,6 +23,18 @@ A modern, interactive game center application built with React, TypeScript, and 
    - Track moves and matches
    - Beautiful emoji cards
 
+4. **Tetris** 🎯
+   - Classic falling blocks puzzle
+   - Rotate and stack tetrominoes
+   - Clear lines to score points
+   - Progressive difficulty levels
+
+5. **Breakout** 🏓
+   - Break bricks with paddle and ball
+   - Multiple levels with increasing difficulty
+   - Track lives and score
+   - Strategic ball control
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -70,6 +82,20 @@ npm run build
 - Find matching pairs
 - Complete the game in as few moves as possible
 - All cards matched = You win!
+
+### Tetris
+- Use arrow keys to move and rotate pieces
+- ← → : Move left/right
+- ↑ : Rotate piece
+- ↓ : Soft drop (speed up)
+- Space : Hard drop (instant placement)
+- Clear lines to score points and level up
+
+### Breakout
+- Move your mouse to control the paddle
+- Break all the bricks to advance to the next level
+- Don't let the ball fall off the screen
+- Each brick may take multiple hits based on color
 
 ## 🎨 Features
 

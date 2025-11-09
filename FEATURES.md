@@ -71,6 +71,66 @@ The Game Center home screen displays a beautiful grid of available games with:
 - Matched pairs stay visible but dimmed
 - Try to complete in minimum moves!
 
+### 4. Tetris 🎯
+
+**Features:**
+- Classic falling blocks puzzle game
+- 7 different tetromino shapes (I, O, T, S, Z, L, J)
+- Piece rotation with collision detection
+- Line clearing mechanics
+- Score and level tracking
+- Progressive difficulty (speed increases with level)
+- Hard drop and soft drop controls
+- Pause/Resume functionality
+- Beautiful colored tetrominoes
+
+**Controls:**
+- **Arrow Left/Right**: Move piece horizontally
+- **Arrow Up**: Rotate piece clockwise
+- **Arrow Down**: Soft drop (speed up descent)
+- **Space Bar**: Hard drop (instant placement)
+- **P Key**: Pause/Resume game
+- **Play Button**: Start new game
+- **Reset Button**: Restart from scratch
+
+**Gameplay Tips:**
+- Complete horizontal lines to clear them and score points
+- Score increases with level multiplier
+- Level up every 10 lines cleared
+- Game speed increases with each level
+- Plan ahead to avoid gaps and stacking too high
+- Use hard drop for quick placements
+
+### 5. Breakout 🏓
+
+**Features:**
+- Classic brick-breaking paddle game
+- Multiple levels with progressive difficulty
+- Physics-based ball bouncing
+- Lives system (3 lives per game)
+- Score tracking
+- Multi-hit bricks (some bricks require multiple hits)
+- Ball angle control based on paddle hit position
+- Level progression system
+- Colorful brick patterns
+- Smooth mouse controls
+
+**Controls:**
+- **Mouse Movement**: Control paddle position
+- **Space Bar**: Pause/Resume game
+- **Play Button**: Start new game
+- **Reset Button**: Restart from scratch
+
+**Gameplay Tips:**
+- Hit the ball with different parts of the paddle to control angle
+- Center hits send the ball straight up
+- Edge hits create sharper angles for strategy
+- Some bricks require multiple hits (indicated by opacity)
+- Each brick broken increases your score
+- Complete all bricks to advance to the next level
+- Higher levels have more rows and tougher bricks
+- Don't let the ball fall below the paddle!
+
 ## 🎨 UI/UX Features
 
 ### Design Elements
@@ -116,15 +176,18 @@ The application works seamlessly on:
 ## 🎯 Future Enhancement Ideas
 
 Potential features for future versions:
-- More games (Sudoku, 2048, Minesweeper, etc.)
-- Difficulty levels
-- Leaderboard/High scores
+- More games (Sudoku, 2048, Minesweeper, Pong, etc.)
+- Difficulty levels for AI games
+- Leaderboard/High scores with persistence
 - Multiplayer support
 - Sound effects and music
 - Game statistics and analytics
 - User profiles and progress tracking
-- Custom themes
+- Custom themes and color schemes
 - Mobile app version
+- Touch controls for mobile devices
+- Game replays and recordings
+- Achievements and badges
 
 ## 🛠️ Technical Stack
 
