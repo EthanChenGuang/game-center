@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Gamepad2, Grid3x3, Zap, Brain, Moon, Sun, Box, CircleDot, Layers, Bomb } from 'lucide-react'
+import { Gamepad2, Grid3x3, Zap, Brain, Moon, Sun, Box, CircleDot, Layers, Bomb, Circle, Puzzle } from 'lucide-react'
+
 import { GameType } from '@/App'
 
 interface GameCenterProps {
@@ -41,7 +42,6 @@ export function GameCenter({ onSelectGame, theme, toggleTheme }: GameCenterProps
       color: 'from-purple-500 to-pink-500'
     },
     {
-<<<<<<< HEAD
       id: 'tetris',
       title: 'Tetris',
       description: 'Stack the falling blocks and clear lines!',
@@ -54,7 +54,8 @@ export function GameCenter({ onSelectGame, theme, toggleTheme }: GameCenterProps
       description: 'Break all the bricks with your paddle and ball!',
       icon: <CircleDot className="w-12 h-12" />,
       color: 'from-rose-500 to-pink-500'
-=======
+    },
+    {
       id: 'game2048',
       title: '2048',
       description: 'Combine tiles to reach 2048! Slide and merge numbers.',
@@ -67,7 +68,21 @@ export function GameCenter({ onSelectGame, theme, toggleTheme }: GameCenterProps
       description: 'Find all mines without hitting one! Use logic and flags.',
       icon: <Bomb className="w-12 h-12" />,
       color: 'from-yellow-500 to-amber-500'
->>>>>>> 99b7912 (Add Game2048 and Minesweeper to Game Center)
+    },
+    { 
+
+      id: 'connectfour',
+      title: 'Connect Four',
+      description: 'Drop tokens strategically to connect four before the computer!',
+      icon: <Circle className="w-12 h-12" />,
+      color: 'from-orange-500 to-red-500'
+    },
+    {
+      id: 'slidingpuzzle',
+      title: 'Sliding Puzzle',
+      description: 'Rearrange the tiles to restore order in this classic 15-puzzle challenge!',
+      icon: <Puzzle className="w-12 h-12" />,
+      color: 'from-amber-500 to-orange-500'
     }
   ]
 
