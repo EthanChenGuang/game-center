@@ -10,8 +10,9 @@ import { Minesweeper } from '@/components/games/Minesweeper'
 import { ConnectFour } from '@/components/games/ConnectFour'
 import { SlidingPuzzle } from '@/components/games/SlidingPuzzle'
 import { SpaceInvaders } from '@/components/games/SpaceInvaders'
+import { Mastermind } from '@/components/games/Mastermind'
 
-export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'tetris' | 'breakout' | 'game2048' | 'minesweeper' | 'connectfour' | 'slidingpuzzle' | 'spaceinvaders'
+export type GameType = 'home' | 'tictactoe' | 'snake' | 'memory' | 'tetris' | 'breakout' | 'game2048' | 'minesweeper' | 'connectfour' | 'slidingpuzzle' | 'spaceinvaders' | 'mastermind'
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -53,6 +54,8 @@ function App() {
         return <SlidingPuzzle onBack={() => setCurrentGame('home')} />
       case 'spaceinvaders':
         return <SpaceInvaders onBack={() => setCurrentGame('home')} />
+      case 'mastermind':
+        return <Mastermind onBack={() => setCurrentGame('home')} />
       default:
         return <GameCenter onSelectGame={setCurrentGame} theme={theme} toggleTheme={toggleTheme} />
     }

@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Gamepad2, Grid3x3, Zap, Brain, Moon, Sun, Box, CircleDot, Layers, Bomb, Circle, Puzzle, Rocket } from 'lucide-react'
+import { Gamepad2, Grid3x3, Zap, Brain, Moon, Sun, Box, CircleDot, Layers, Bomb, Circle, Puzzle, Rocket , KeyRound } from 'lucide-react'
 
 import { GameType } from '@/App'
 
@@ -90,6 +90,13 @@ export function GameCenter({ onSelectGame, theme, toggleTheme }: GameCenterProps
       description: 'Defend Earth from alien invaders! Shoot them down before they reach you!',
       icon: <Rocket className="w-12 h-12" />,
       color: 'from-cyan-500 to-blue-500'
+    },
+    {
+      id: 'mastermind',
+      title: 'Mastermind',
+      description: 'Crack the secret color code before you run out of attempts!',
+      icon: <KeyRound className="w-12 h-12" />,
+      color: 'from-fuchsia-500 to-purple-500'
     }
   ]
 
